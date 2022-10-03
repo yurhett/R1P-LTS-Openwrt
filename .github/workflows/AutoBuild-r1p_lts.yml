@@ -37,7 +37,7 @@ env:
 # 编译时调用的 [.config] 文件名称
   CONFIG_FILE: r1p_lts
 # 源码仓库:分支
-  DEFAULT_SOURCE: orangepi-xunlong/openwrt:master
+  DEFAULT_SOURCE: orangepi-xunlong/openwrt:openwrt-21.02
 # 上传固件到 Github Releases
   UPLOAD_RELEASES: false
 # 上传固件到 Github Artifacts
