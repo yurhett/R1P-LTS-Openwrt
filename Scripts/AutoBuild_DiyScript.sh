@@ -7,7 +7,7 @@ Firmware_Diy_Core() {
 	Author=AUTO
 	Author_URL=AUTO
 	Default_Flag=AUTO
-	Default_IP="192.168.1.1"
+	Default_IP="192.168.3.1"
 	Default_Title="Powered by AutoBuild-Actions"
 
 	Short_Fw_Date=true
@@ -15,7 +15,7 @@ Firmware_Diy_Core() {
 	Fw_Format=false
 	Regex_Skip="packages|buildinfo|sha256sums|manifest|kernel|rootfs|factory|itb|profile|ext4|json"
 
-	AutoBuild_Features=true
+	AutoBuild_Features=false
 }
 
 Firmware_Diy() {
@@ -38,5 +38,5 @@ Firmware_Diy() {
 	# ${FEEDS_LUCI}			OpenWrt 源码目录下的 package/feeds/luci 目录
 	# ${FEEDS_PKG}			OpenWrt 源码目录下的 package/feeds/packages 目录
 	# ${BASE_FILES}			OpenWrt 源码目录下的 package/base-files/files 目录
-	:
+	AddPackage git other OpenClash vernesong master
 }
